@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="test.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Cookie Run: Kingdom Team Builds</title>
+</head>
+<body>
+    <h1>Team Builds for Guild Boss Battles</h1>
+    <p id="demo">Selected Boss: None</p>
+    <div class="bosses">
+        <button type="button" onclick='showPage("RVD"); guides(Rsave, RVD)'>RVD</button>
+        <button type="button" onclick='showPage("AOD"); guides(Asave, AOD)'>AOD</button>
+        <button type="button" onclick='showPage("TLA"); guides(Tsave, TLA)'>TLA</button><br>
+        <section id="RVD">
+            <select onchange='guides(value, RVD); Rsave = value'>
+            <option class="guideList" id="rvdGuideList" value="0" onclick='rvdGuides(0)'>BR Twizz (Hard Variant)</option>
+            <option class="guideList" id="rvdGuideList" value="1" onclick='rvdGuides(1)'>Mango Twizz</option>
+            <option class="guideList" id="rvdGuideList" value="2" onclick='rvdGuides(2)'>BR Twizz (Easy Variant)</option>
+            <option class="guideList" id="rvdGuideList" value="3" onclick='rvdGuides(3)'>Darkness Comp (Mystic)</option>
+            <option class="guideList" id="rvdGuideList" value="4" onclick='rvdGuides(4)'>Darkness Comp (Prune)</option>
+            </select>
+        </section>
+        <section id ="AOD">
+            <button class="guideList" id="aodGuideList" onclick="guides(0, AOD)")>AOD Team</button>
+        </section>
+        <section id="TLA">
+            <select onchange='guides(value, TLA); Tsave = value'>
+            <option class="guideList" id="tlaGuideList" value="0" onclick="tlaGuides(0)")>Cream Ferret Team</option>
+            <option class="guideList" id="tlaGuideList" value="1" onclick="tlaGuides(1)")>Star Coral Team</option>
+            <option class="guideList" id="tlaGuideList" value="2" onclick="tlaGuides(2)")>Replacements</option>
+            </select>
+        </section>
+    </div>
+        <p id="guide" class="red">Click a Boss for an option</p>
+</body>
+</html>

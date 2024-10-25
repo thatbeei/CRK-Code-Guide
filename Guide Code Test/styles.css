@@ -1,0 +1,63 @@
+body {
+	text-align: center;
+	font-family: sans-serif;
+	margin: 0;
+  background-image: linear-gradient(45deg, #37d12c 25%, #28870b 25%, #28870b 50%, #37d12c 50%, #37d12c 75%, #28870b 75%, #28870b 100%);
+  background-size: 70.71px 70.71px;
+
+}
+
+.uncent {
+	text-align: center;
+}
+.bosses { 
+  height: 2.5rem; 
+}
+.red {
+  color: white;
+  background-image: linear-gradient(45deg, #630000 25%, #470000 25%, #470000 50%, #630000 50%, #630000 75%, #470000 75%, #470000 100%);
+  background-size: 70.71px 70.71px;
+  padding: 30px;
+  border-color: black;
+  border-width: 100px;
+}
+img {
+  width: 50px;
+  height: 40px;
+}
+.bosses > section {
+	display: none;
+}
+.guide {
+	text-align: center;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+	display: flex;
+  align-items: center;
+  
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  width: 80%;
+  margin: auto;
+  background-color: rgb(0 0 0 / 0.5);
+  color: white;
+  border-color: red;
+}
+.guide:not(:last-child) {
+  margin-bottom: 20px;
+}
+.guide span {
+  padding-left: 1rem;
+}
+.resize {
+	/* width: 50px;
+	display: inline-table; */
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+.invisible {
+  opacity: 0;
+  display:inline-block;
+}
